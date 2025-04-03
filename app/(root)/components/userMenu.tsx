@@ -1,12 +1,13 @@
 "use client"
 
+import { user } from '@/typeScript'
 import { signOut } from 'next-auth/react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import { FaRegUser } from 'react-icons/fa'
 
-const UserMenu = ({name,email,id}:sessionProps) => {
+const UserMenu = ({name,email,id}:user) => {
   const router=useRouter()
 
   const [act,setAct]=React.useState<boolean>(false)

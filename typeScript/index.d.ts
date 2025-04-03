@@ -1,7 +1,10 @@
+import { ReactNode } from "react"
+
+
 type FormType="sign-in" | "sign-up"
 
-interface sessionProps{
-    id?:string
-    name?:string
-    email?:string
+interface user{
+    id?:string 
+    name?:string 
+    email?:string 
 }
