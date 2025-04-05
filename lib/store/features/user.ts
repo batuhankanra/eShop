@@ -5,7 +5,7 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 
 
 const initialState:user ={
-    name:'',
+    name:''  ,
     email:'',
     id:''
 }

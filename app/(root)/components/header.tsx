@@ -14,7 +14,7 @@ const Header = async () => {
             <Logo />
             <Input className='md:w-[400px] lg:w-[600px] hidden md:flex bg-zinc-300 ' placeholder='search...' />
             <div className='flex items-center gap-x-6'>
-                <UserMenu name={user?.name} email={user?.email} id={user?.id} />
+                <UserMenu user={user} />
                 <button className='flex items-center gap-x-1 cursor-pointer hover:text-zinc-600 duration-150'> <BiBasket />Sepetim</button>
             </div>
         </div>

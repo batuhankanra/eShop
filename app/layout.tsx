@@ -3,7 +3,6 @@ import "./globals.css";
 import { metaData } from "@/typeScript/metaData";
 import {Roboto} from "next/font/google"
 import { Toaster } from "sonner";
-import { GetUser } from "@/lib/action";
 import StoreProvider from "./StoreProvider";
 
 const roboto=Roboto({subsets:['latin'],weight:"400"})
@@ -18,8 +17,6 @@ export default   function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
- 
   return (
     <html lang="en">
       <body
