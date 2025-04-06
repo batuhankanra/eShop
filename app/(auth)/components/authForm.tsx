@@ -12,6 +12,7 @@ import { signIn } from 'next-auth/react'
 import { toast } from 'sonner'
 import { useRouter } from 'next/navigation'
 import axios from 'axios'
+import { FormType } from '@/typeScript'
 
 const AuthForm = ({type}:{type:FormType}) => {
   const [name,setName]=React.useState<string>("")
@@ -34,7 +35,7 @@ const AuthForm = ({type}:{type:FormType}) => {
           
         }
       })
-    }else if(type==='sign-up'){
+    }else if(type==='sign-up '){
        await  axios.post('/api/auth/signUp',{
        
           email,
@@ -69,7 +70,7 @@ const AuthForm = ({type}:{type:FormType}) => {
     <form onSubmit={handleForm} className='flex items-center justify-center  mx-auto min-h-screen gap-x-5 bg-linear-to-r from-gray-400 to-zinc-300'>
         <div className='lg:w-1/3 w-2/3 flex flex-col gap-y-4 shadow-lg bg-zinc-100 p-3 rounded-lg '>
           <h1 className=''>{type==='sign-in' ? "Giriş Yap" : "Kayıt Ol"}</h1>
-          {type==='sign-up' && <Input value={name} onChange={e=>setName(e.target.value)} className='w-full ' type='text' placeholder='Kullaıcı ismi' />}
+          {type==='sign-up ' && <Input value={name} onChange={e=>setName(e.target.value)} className='w-full ' type='text' placeholder='Kullaıcı ismi' />}
           <Input className='w-full ' value={email} onChange={e=>setEmail(e.target.value)}  type='email' placeholder='Email' />
           <Input className='w-full ' value={password} onChange={e=>setPassword(e.target.value)} type='password' placeholder='Parola' />
           <Button className='cursor-pointer' type='submit' >Gonder</Button>

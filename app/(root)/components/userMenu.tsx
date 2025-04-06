@@ -1,5 +1,6 @@
 "use client"
 
+import { AppDispatch } from '@/lib/store'
 import { removeUser, setUser } from '@/lib/store/features/user'
 import { appDispatch } from '@/lib/store/hook'
 import { user } from '@/typeScript'

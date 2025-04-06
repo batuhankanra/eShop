@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 
 import userRedux from './features/user'
+import modal from './features/modal'
 
 export const makeStore= ()=>{
     return configureStore({
         reducer:{
-            user:userRedux
+            user:userRedux,
+            modal
         }
     })
 }

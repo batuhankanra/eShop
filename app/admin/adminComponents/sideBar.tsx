@@ -18,7 +18,7 @@ const AdminSideBar = () => {
         return ()=>document.removeEventListener('mousedown',handleCLick)
       },[])
     return (
-        <div ref={ref} className={`fixed  top-0 left-0 bg-zinc-100  border-r border-zinc-300 min-h-screen z-99 h-full mr-2 pt-3 ${isOpen ? 'w-40' : 'w-10'}  transition-all duration-200 `}>
+        <div ref={ref} className={`fixed  top-0 left-0 bg-zinc-100  border-r border-zinc-300 min-h-screen z-2 h-full mr-2 pt-3 ${isOpen ? 'w-40' : 'w-10'}  transition-all duration-200 `}>
             <div className='flex items-center mt-4 '>
                 <button className='text-xl cursor-pointer hover:text-zinc-500 duration-200 rounded-md p-1  ' onClick={()=>setIsOpen(!isOpen)}><GiHamburgerMenu/></button>
                 <Logo className={`${isOpen ? 'block' : 'hidden'} `} size='sm' link={'/admin'} />

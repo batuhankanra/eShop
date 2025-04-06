@@ -11,7 +11,7 @@ const Header = async () => {
     <header className='w-full fixed top-0 py-2 bg-zinc-100 shadow-md'>
       <div className='container mx-auto '>
         <div className='flex items-center justify-between'>
-            <Logo />
+            <Logo link='/' size='lg' className='' />
             <Input className='md:w-[400px] lg:w-[600px] hidden md:flex bg-zinc-300 ' placeholder='search...' />
             <div className='flex items-center gap-x-6'>
                 <UserMenu user={user} />
