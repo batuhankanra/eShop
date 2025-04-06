@@ -7,7 +7,6 @@ import { signOut } from 'next-auth/react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React from 'react'
-import { BiLogoSlackOld } from 'react-icons/bi'
 import { FaRegUser } from 'react-icons/fa'
 
 const UserMenu = ({user}:{user:user}) => {
